@@ -14,11 +14,17 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+      let robot = '🤖';
+      let rocket = '🚀';
+      let laptop = '💻';
+      let name = 'React';
+
       ReactDOM.render(
         <ul>
-          <li>A</li>
-          <li>B</li>
-          <li>C</li>
+          <li>{robot}</li>
+          <li>{rocket}</li>
+          <li>{laptop}</li>
+          <li>{name.toUpperCase()}</li>
         </ul>,
         document.getElementById('root')
       );
