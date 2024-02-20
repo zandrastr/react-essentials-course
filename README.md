@@ -1,5 +1,5 @@
 # React Essentials course 👩‍💻📚
-In this repository I will save coding exercises I complete during the __React.js Essential Training__ course on LinkedIn Learning.  
+In this repository I will save coding exercises I complete during the __React.js Essential Training__ course on LinkedIn Learning.
 I am taking this course to brush up on my React skills and gain a deeper understanding of best practices.
 
 ## About the course
