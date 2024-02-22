@@ -29,11 +29,19 @@
           </section>
         );
       }
+      function Footer(props) {
+        return (
+          <footer>
+            <p>Copyright {props.year} </p>
+          </footer>
+        );
+      }
       function App() {
         return (
           <div>
             <Header name='Cindy' />
             <Main description='amazing' />
+            <Footer year={new Date().getFullYear()} />
           </div>
         );
       }
