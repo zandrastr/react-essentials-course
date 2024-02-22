@@ -4,12 +4,10 @@
     <meta charset="UTF-8" />
     <script
       src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
+      crossorigin></script>
     <script
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+      crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>React ⚛️</title>
   </head>
@@ -27,10 +25,11 @@
       function Main(props) {
         return (
           <section>
-            <p>
-              We serve the most {props.adjective}{" "}
-              food around.
-            </p>
+            <ul>
+              {props.dishes.map((dish) => (
+                <li>{dish}</li>
+              ))}
+            </ul>
           </section>
         );
       }
@@ -43,22 +42,19 @@
         );
       }
 
+      const dishes = ['Pizza', 'Soup', 'Salmon'];
+
       function App() {
         return (
           <div>
-            <Header name="Cindy" />
-            <Main adjective="amazing" />
-            <Footer
-              year={new Date().getFullYear()}
-            />
+            <Header name='Cindy' />
+            <Main dishes={dishes} />
+            <Footer year={new Date().getFullYear()} />
           </div>
         );
       }
 
-      ReactDOM.render(
-        <App />,
-        document.getElementById("root")
-      );
+      ReactDOM.render(<App />, document.getElementById('root'));
     </script>
   </body>
 </html>
